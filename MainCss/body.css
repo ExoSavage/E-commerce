@@ -1,0 +1,402 @@
+/* Pour mon intro du site  */
+#slang {
+    background-image: url("../img/fondecran.avif");
+    background-size: cover;
+    background-position: center;
+    color: #F1F3F5;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+
+    height: 650px;
+    align-items: center;
+    text-align: center;
+}
+
+#slang button {
+    margin: 20px;
+}
+
+#button {
+    font-size: 25px;
+    background-color: #7C3AED;
+    color: white;
+    border-color: #A78BFA;
+    border-radius: 10px;
+}
+
+
+#button1 {
+    font-size: 25px;
+    background-color: transparent;
+    color: #C4B5FD;
+    border-color: #7C3AED;
+    border-radius: 10px;
+    gap: 30px;
+
+}
+
+#button:hover,
+#button1:hover,
+.button-categorie:hover {
+    color: red;
+    transform: scale(1.1);
+
+}
+
+#button,
+#button1,
+.button-categorie,
+.buttonpopulaire {
+    cursor: pointer;
+}
+
+/* Fin de intro */
+
+
+
+
+
+
+/* Tous mes titres */
+.titre {
+    text-decoration: underline;
+    color: #F1F3F5;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-top: 40px;
+}
+
+
+.titre::before,
+.titre::after {
+    content: "";
+    height: 1px;
+    background-color: white;
+    flex: 1;
+}
+
+
+.sous-titre {
+    text-align: center;
+    color: #F1F3F5;
+}
+
+
+
+
+
+
+
+
+/*Grid pour console section*/
+.console {
+    background-image: url(../img/console.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+
+
+    color: #A7AFBC;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    overflow: hidden;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+.console a,
+.categories a,
+.lapto a {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+.console h2,
+.categories h2,
+.lapto h2 {
+    text-decoration: underline;
+}
+
+.console h3,
+.categories h3,
+.lapto h3 {
+    color: #67E8F9;
+}
+
+
+
+
+
+
+/* Ma section categorie grid*/
+.categories {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    height: 500px;
+    color: #A7AFBC;
+    overflow: hidden;
+}
+
+
+#chaise-gaming {
+    background-image: url(../img/chaise-gaming.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-size: 110% 100%;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+
+#casque-gaming {
+    background-image: url(../img/casque-gaming.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+/* Fin*/
+
+
+
+.lapto {
+    background-image: url(../img/lapto\ gaming.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 500px;
+
+
+    color: #A7AFBC;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    overflow: hidden;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+
+/*Fin des grid*/
+
+
+/* Button des grids*/
+.button-categorie {
+    background-color: #8B5CF6;
+    color: white;
+    border: 2px solid #8B5CF6;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+
+
+
+main h3 {
+    color: #67E8F9;
+}
+
+
+
+
+
+/*Produit populaire css*/
+.produitpopulaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.produitpopulaire button {
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #67E8F9;
+    color: white;
+
+}
+
+#cardps5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+
+    border-radius: 25px;
+    background-color: #172033;
+    border: 1px solid #27303b;
+    color: #CBD5E1;
+}
+
+#cardps5 img,
+#cardlapto img {
+    height: 160px;
+    border-radius: 30px;
+}
+
+#cardlapto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+
+    border-radius: 25px;
+    background-color: #172033;
+    border: 1px solid #27303b;
+    color: #CBD5E1;
+}
+
+.prix {
+    color: white;
+    font-size: 25px;
+    border: 2px solid white;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.buttonpopulaire {
+    cursor: pointer;
+}
+
+.buttonpopulaire:hover {
+    color: #8B5CF6;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+/* SECTION RESPONSIVE*/
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+
+    /*Pour mes button de ma premiere parti accueil*/
+    #button,
+    #button1 {
+        font-size: 15px;
+    }
+
+    /*Ma section grid category*/
+
+    .console,
+    .lapto {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .console a,
+    .categories a,
+    .lapto a {
+        font-size: 20px;
+    }
+
+
+    .categories {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Ma section LOADOUT DU MOMENT*/
+    .produitpopulaire {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #cardps5,
+    #cardlapto {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 20px;
+    }
+
+    #cardps5 img,
+    #cardlapto img {
+        height: 140px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

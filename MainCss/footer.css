@@ -1,0 +1,106 @@
+#Upperfooter {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 25px;
+    color: #CBD5E1;
+    background-color: #151922;
+}
+
+#footerimage {
+    display: flex;
+    height: 100px;
+}
+
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: #CBD5E1;
+    background-color: #151922;
+}
+
+
+
+
+
+
+/*Pour mon suscribe*/
+#suscribe {
+    text-align: center;
+    font-size: 25px;
+}
+
+#suscribe input {
+    font-size: 20px;
+}
+
+#suscribe button {
+    font-size: 25px;
+    background-color: #67E8F9;
+    color: #121929;
+    border-color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* SECTION RESPONSIVE*/
+/* Mobile responsive */
+
+@media (max-width: 700px) {
+
+    /*La section haut de mon footer*/
+    #Upperfooter {
+        grid-template-columns: 1fr;
+    }
+
+    #footerimage {
+        height: auto;
+        align-items: center;
+    }
+
+    #footerimage img {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    #Upperfooter h1 {
+        font-size: 30px;
+    }
+
+    #Upperfooter h2 {
+        font-size: 20px;
+    }
+
+    #suscribe h2 {
+        font-size: 28px;
+    }
+
+    #suscribe button {
+        font-size: 20px;
+    }
+
+
+    /*Ma section bas du footer */
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    footer h2{
+        font-size: 15px;
+    }
+
+}

@@ -1,0 +1,171 @@
+:root {
+    background-color: #0B0D12;
+}
+
+
+.navbar {
+    background-color: #151922;
+}
+
+
+
+/*Pour mon coter guache de mon grid, image et text*/
+#leftsidegrid {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#leftsidegrid img {
+    border-radius: 30px;
+    height: 80px;
+    width: 80px;
+}
+
+#leftsidegrid a:hover{
+    color: blue;
+}
+
+
+
+
+
+/*Mon grid au complet*/
+#headergrid ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+#headergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#headergrid a {
+    color: #F1F3F5;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+/*Pour ma section qui contient des liens et des logo*/
+#menu {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#menu a {
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu a:hover{
+    color: blue;
+}
+
+.icon {
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+
+}
+
+
+
+
+
+
+/*Ma parti responsive pour un mobile*/
+@media (max-width: 600px) {
+
+    #headergrid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #leftsidegrid {
+        justify-content: center;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #menu a {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 24px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Ma parti responsive pour une tablette*/
+@media (max-width: 1048x) {
+
+    #headergrid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #leftsidegrid {
+        justify-content: center;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #menu a {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 24px;
+    }
+
+}
+
+
+

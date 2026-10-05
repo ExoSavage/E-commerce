@@ -1,0 +1,118 @@
+/*Le titre de ma page*/
+#titre {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid white;
+}
+
+/*Le soustitre*/
+#soustitre {
+    color: #F1F3F5;
+    display: flex;
+    border-bottom: 2px solid white;
+    gap: 250px;
+}
+
+
+
+/*Pour mes produits*/
+#produit {
+    color: #F1F3F5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+
+    gap: 20px;
+}
+
+
+
+#produit img {
+    height: 400px;
+    width: 100%;
+}
+
+#ps4,
+#ps5,
+#switch2,
+#series,
+#xbox {
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.prix {
+    display: inline-block;
+    border: 2px solid #A78BFA;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 26px;
+    color: #A78BFA;
+}
+
+.button {
+    border-color: #7C3AED;
+    color: #A78BFA;
+    border: 2px solid #7C3AED;
+
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/* SECTION RESPONSIVE*/
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+    body h1 {
+        font-size: 30px;
+    }
+
+    body h2 {
+        font-size: 20px;
+    }
+
+
+
+    /*Ma section Trier par*/
+    #soustitre {
+        gap: 30px;
+    }
+
+
+    /*Mes grids de produit*/
+    #produit {
+        grid-template-columns: 1fr;
+        width: 90%;
+
+    }
+
+    #produit img {
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+    }
+
+    .prix{
+        font-size: 20px;
+    }
+
+    .button{
+        font-size: 20px;
+    }
+}

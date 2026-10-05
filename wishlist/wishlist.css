@@ -1,0 +1,23 @@
+
+
+.wishlist {
+    display: grid;
+    grid-template-rows: 1fr 15px 15px 15px 15px;
+    text-align: center;
+    color: #F1F3F5;
+}
+
+
+.wishlist button {
+    background-color: #8B5CF6;
+    color: white;
+    border: 2px solid #8B5CF6;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.wishlist button:hover {
+    color: red;
+    transform: scale(1.1);
+}

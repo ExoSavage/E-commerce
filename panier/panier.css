@@ -1,0 +1,198 @@
+#titre {
+    color: white;
+    text-align: center;
+}
+
+
+
+#panier {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 40px;
+}
+
+
+
+/* GRILLE DES PRODUITS */
+
+#gridd {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+
+
+
+/* CARTE PRODUIT */
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+
+    background-color: #172033;
+    border: 2px solid #334155;
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+/* IMAGE */
+
+.grid2 img {
+    width: 180px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Pour target ma section textes du code nth child */
+.grid2 section:nth-child(2) {
+    text-align: left;
+    padding-left: 30px;
+}
+
+
+.grid2 h2 {
+    margin: 8px 0;
+    color: #F1F3F5;
+}
+
+/*Ces 2 nth cible mon text: console gaming, quanititer et vise verse pour le lapto*/
+.grid2 h2:nth-child(2) {
+    color: #CBD5E1;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.grid2 h2:nth-child(3) {
+    color: #CBD5E1;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+
+
+/*Pour les prix */
+.grid2 h2:last-child {
+    color: #A78BFA;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+/* Pour ma section resumer */
+#resumer {
+    background-color: #151922;
+    border: 2px solid #A78BFA;
+    border-radius: 20px;
+
+    padding: 30px;
+    text-align: left;
+}
+
+#resumer h1 {
+    color: #A78BFA;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#resumer p {
+    display: flex;
+    justify-content: space-between;
+
+    color: #CBD5E1;
+    font-size: 18px;
+}
+
+#resumer p span {
+    color: #F1F3F5;
+    font-weight: bold;
+}
+
+
+/*C'est la line entre la livraison et le totale*/
+#resumer hr {
+    border: none;
+    border-top: 1px solid #334155;
+    margin: 25px 0;
+}
+
+#resumer h2 {
+    display: flex;
+    justify-content: space-between;
+    color: #F1F3F5;
+}
+
+/*Pour target mon prix totale*/
+#resumer h2 span {
+    color: #A78BFA;
+}
+
+
+#resumer button {
+    width: 100%;
+    padding: 15px;
+
+    margin-top: 20px;
+
+    background-color: transparent;
+    border: 2px solid #7C3AED;
+    border-radius: 10px;
+
+    color: #C4B5FD;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#resumer button:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+
+#confirmation {
+    color: #4ADE80;
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* SECTION RESPONSIVE*/
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+
+body h1{
+    font-size: 30px;
+}
+
+body h2{
+    font-size: 20px;
+}
+
+    #panier{
+        grid-template-columns: 1fr;
+    }
+
+    #gridd {
+        grid-template-columns: 1fr;
+    }
+
+    .grid2{
+        grid-template-columns: 1fr;
+    }
+}

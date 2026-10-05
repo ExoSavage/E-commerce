@@ -1,0 +1,240 @@
+#HautDePage {
+    color: #F1F3F5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    border-bottom: 2px solid white;
+}
+
+
+#gridimage {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    text-align: center;
+    gap: 20px;
+}
+
+#petitimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#gridimage > section:first-child img {
+    width: 450px;
+    height: 400px;
+   
+}
+
+/* PETITES IMAGES */
+#petitimages img {
+    width: 300px;
+    height: 250px;
+  
+}
+
+
+.HautInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prix {
+    display: inline-block;
+    border: 2px solid #A78BFA;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 26px;
+    color: #A78BFA;
+}
+
+
+
+/*Mes titres*/
+.titre {
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.titre h1 {
+    text-decoration: underline;
+}
+
+.titre h2 {
+    color: #F1F3F5;
+}
+
+
+
+/*Ma section CARACTÉRISTIQUES*/
+#specs {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-image: url("../img/fondecran.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+#specs h2 {
+    padding: 5px 10px;
+    text-align: left;
+    color: #F1F3F5;
+}
+
+
+
+/*Pour faire le checkbox et le texte sur la meme ligne*/
+#wishlistgrid {
+    display: flex;
+}
+
+/*Ma parti wishlish*/
+label {
+    color: #F1F3F5;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+label:hover {
+    color: red;
+}
+
+#wishlist:checked+label {
+    color: red;
+}
+
+
+/*Ma section produit recommender*/
+
+#produit {
+    color: #F1F3F5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    color: #F1F3F5;
+    gap: 20px;
+}
+
+
+
+#produit img {
+    height: 400px;
+    width: 100%;
+}
+
+#ps4,
+#ps5,
+#switch2,
+#series,
+#xbox {
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.prix {
+    display: inline-block;
+    border: 2px solid #A78BFA;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 26px;
+    color: #A78BFA;
+}
+
+.button {
+    border-color: #7C3AED;
+    color: #A78BFA;
+    border: 2px solid #7C3AED;
+
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* SECTION RESPONSIVE*/
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+    body h1 {
+        font-size: 30px;
+    }
+
+    body h2 {
+        font-size: 20px;
+    }
+
+
+
+    /*Ma section 3 images et text et prix a coter de autre*/
+    #HautDePage {
+        grid-template-columns: 1fr;
+    }
+
+       #gridimage > section:first-child img {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+      #petitimages img {
+        width: 150px;
+        height: 130px;
+      
+    }
+
+
+
+
+/*Ma section video*/
+    .titre video{
+        width: 75%;
+        height: auto;
+    }
+
+
+    /*Ma section specs*/
+    #specs{
+        width: 95%;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #specs h2{
+        font-size: 15px;
+        padding: 12px 8px;
+    }
+
+
+
+
+    /*Ma section produit recommender*/
+    #produit{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #produit img{
+        width: 90%;
+        height: 200px;
+    }
+
+    .prix,
+    .button{
+        font-size: 20px;
+    }
+
+}
